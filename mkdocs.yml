@@ -1,36 +1,77 @@
-site_name: Awesome ArchLinux
-site_url: https://awesome-arch.netlify.com/
-site_description: A curated list of awesome ArchLinux frameworks, libraries and software
+site_name: MkDocs
+site_description: MkDocs Material Starter Kit. Deploy documentation to hosting platforms (Netlify, GitHub Pages).
 site_author: Alex Creio
-repo_name: creio/awesome-arch
-repo_url: https://github.com/creio/awesome-arch
+# site_url: https://mkdocs.netlify.com/
+
+# Repository
+repo_name: creio/mkdocs
+repo_url: https://github.com/creio/mkdocs
 # edit_uri: edit/master
-copyright: 'Copyright &copy;'
+edit_uri: ""
+# Copyright
+copyright: 'Copyright &copy; Alex Creio'
 
+# Page tree
+nav:
+  - Home: index.md
+
+# Configuration
 theme:
-  language: 'ru'
   name: material
+  # 404 page
+  # static_templates:
+    # - 404.html
+  language: ru
+  feature:
+    tabs: false
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: indigo
+    accent: indigo
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  # favicon: 'assets/images/favicon.ico'
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
 
+# Customization
 extra:
   search:
     language: 'en, ru'
   social:
     - type: github
       link: https://github.com/creio
-# google_analytics:
-#   - UA-510626-7
-#   - auto
+
 extra_css:
-    - assets/css/extra.css
-nav:
-  - "Home": "index.md"
-  - "Start": "start"
-  # - "Getting started":
-  #     - "Start": "start"
+  - assets/css/custom.css
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
