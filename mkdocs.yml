@@ -19,4 +19,4 @@ extra:
 extra_css:
     - css/extra.css
 nav:
-  - "Home": "index.md"
+  - "Awesome ArchLinux": "index.md"
