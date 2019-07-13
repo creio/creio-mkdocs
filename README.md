@@ -17,7 +17,7 @@ MkDocs Material Starter Kit. Deploy documentation to hosting platforms (Netlify,
 
 ## Create docs
 
-Create Netlify project & Github repo. Method 1.
+Create Netlify project & Github repo. Method 1. [Demo](https://creio-mkdocs.netlify.com).
 
 - [Open url](https://app.netlify.com/start/deploy?repository=https://github.com/creio/creio-mkdocs).
 - `git clone https://github.com/[GITHUB_USER]/[GITHUB_REPO]/`.
@@ -61,7 +61,7 @@ File `netlify.toml` custom build command.
 
 ## Github pages
 
-Github pages, no Netlify. Method 2.
+Github pages, no Netlify. Method 2. [Demo](https://creio.github.io/creio-mkdocs).
 
 - [Fork repo](https://github.com/creio/creio-mkdocs).
 - `git clone https://github.com/[GITHUB_USER]/[GITHUB_REPO]/`.
