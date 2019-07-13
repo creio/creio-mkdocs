@@ -1,8 +1,11 @@
+path: blob/master
+source: README.md
+
 # Awesome ArchLinux
 
-A curated list of awesome Python frameworks, libraries, software and resources.
+List of awesome ArchLinux: software, libraries and resources.
 
-Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
+Web Site [netlify](https://awesome-arch.netlify.com/).
 
 - [Установка](#установка)
     - [Предисловие](#предисловие)
