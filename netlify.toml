@@ -1,4 +1,4 @@
 [build]
-command = "cp README.md docs/index.md"
+command = "bash cp README.md docs/index.md"
 command = "mkdocs build"
 publish = "site"
