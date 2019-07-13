@@ -1,6 +1,3 @@
-path: blob/master
-source: README.md
-
 # Awesome ArchLinux
 
 A curated list of awesome Python frameworks, libraries, software and resources.
