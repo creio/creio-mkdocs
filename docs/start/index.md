@@ -22,7 +22,12 @@ pip install --upgrade --user virtualenv
 virtualenv ve
 source ve/bin/activate
 pip install -r requirements.txt
-./task.sh -h
+```
+
+Bash scrypt helper
+
+```sh
+./task.sh
 ```
 
 Create symlink README.md --> docs/index.md
