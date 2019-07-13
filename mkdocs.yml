@@ -28,6 +28,6 @@ extra:
 #   - UA-510626-7
 #   - auto
 extra_css:
-    - css/extra.css
+    - assets/css/extra.css
 nav:
   - "Home": "index.md"
