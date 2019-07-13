@@ -5,7 +5,7 @@ source: README.md
 
 MkDocs Material Starter Kit. Deploy documentation to hosting platforms (Netlify, GitHub Pages).
 
-[Blog Post](https://creio.github.io/mkdocs) Russian.
+[Blog Post](https://creio.github.io/mkdocs) Ru lang.
 
 - [Mkdocs Start](#mkdocs-start)
 - [Create docs](#create-docs)
