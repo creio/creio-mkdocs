@@ -1,81 +1,87 @@
 # Awesome ArchLinux
 
-1. [Установка](#установка)
-   1. [Предисловие](#предисловие)
-   1. [Создание образа](#создание-образа)
-   1. [BIOS/UEFI](#biosuefi)
-   1. [Настройка сети](#настройка-сети)
-   1. [Разметка диска](#разметка-диска)
-   1. [Устанавливаем ядро](#устанавливаем-ядро)
-   1. [Генерируем fstab](#генерируем-fstab)
-   1. [arch-chroot](#archchroot)
-   1. [Настраиваем дату и локаль](#настраиваем-дату-и-локаль)
-   1. [Прописываем хосты](#прописываем-хосты)
-   1. [Initramfs](#initramfs)
-   1. [Ставим пакеты](#ставим-пакеты)
-   1. [Пользователи](#пользователи)
-   1. [Установка grub](#установка-grub)
-   1. [Завершение](#завершение)
-1. [Пакетные менеджеры](#пакетные-менеджеры)
-1. [Нужные пакеты](#нужные-пакеты)
-1. [Масштабировавние 150% как в Windows](#масштабировавние-150-как-в-windows)
-1. [Расширения для Gnome](#расширения-для-gnome)
-1. [Заменяем ядро на стабильное](#заменяем-ядро-на-стабильное)
-1. [Пользовательские сочетания клавиш](#пользовательские-сочетания-клавиш)
-1. [Шрифты](#шрифты)
-1. [Запуск исполняемых файлов по двойному клику в Nautilus](#запуск-исполняемых-файлов-по-двойному-клику-в-nautilus)
-1. [Шаблоны файлов](#шаблоны-файлов)
-1. [Права](#права)
-1. [Добавляем путь в PATH](#добавляем-путь-в-path)
-1. [bin в домашнем каталоге](#bin-в-домашнем-каталоге)
-1. [ZSH](#zsh)
-   1. [Установка](#установка)
-   1. [Oh My Zsh](#oh-my-zsh)
-   1. [Темы](#темы)
-      1. [Jovial](#jovial)
-      1. [Powerlevel10k](#powerlevel10k)
-   1. [Ссылки](#ссылки)
-1. [cat с цветной подсветкой](#cat-с-цветной-подсветкой)
-1. [Цветовые схемы для терминала](#цветовые-схемы-для-терминала)
-1. [Блокируем сайты с рекламой через hosts](#блокируем-сайты-с-рекламой-через-hosts)
-1. [asdf-vm](#asdfvm)
-   1. [Установка:](#установка)
-   1. [Git](#git)
-   1. [AUR](#aur)
-   1. [Удаление](#удаление)
-   1. [Примеры](#примеры)
-   1. [Ссылки](#ссылки)
-1. [Использование NVM](#использование-nvm)
-1. [Настройка Docker](#настройка-docker)
-1. [Настройка Visual Code](#настройка-visual-code)
-1. [Гибернация](#гибернация)
-1. [RAID](#raid)
-1. [Установка и настройка Postgres](#установка-и-настройка-postgres)
-1. [Работаем с github через ssh](#работаем-с-github-через-ssh)
-1. [Tor Service](#tor-service)
-1. [Emoji](#emoji)
-1. [Блокировка рекламных сайтов](#блокировка-рекламных-сайтов)
-1. [Редактирование DConf](#редактирование-dconf)
-1. [i3](#i3)
-   1. [Описание](#описание)
-   1. [Установка и настройка](#установка-и-настройка)
-   1. [XTerm](#xterm)
-   1. [Termite: горячие клавиши](#termite-горячие-клавиши)
-   1. [Цветовые схемы Termite](#цветовые-схемы-termite)
-   1. [Заставка lockscreen](#заставка-lockscreen)
-   1. [Сохранение/восстановление рабочего пространства](#сохранениевосстановление-рабочего-пространства)
-1. [Частые проблемы](#частые-проблемы)
-   1. [Что делать, если каталоги открываются в VSCode?](#что-делать-если-каталоги-открываются-в-vscode)
-   1. [Enter password to unlock your login keyring](#enter-password-to-unlock-your-login-keyring)
-1. [Справка по командам и т.д.](#справка-по-командам-и-тд)
-   1. [Cheat.sh](#cheatsh)
-   1. [Marker](#marker)
-   1. [TLDR](#tldr)
-1. [Шпаргалка по командам Shell](#шпаргалка-по-командам-shell)
+A curated list of awesome Python frameworks, libraries, software and resources.
 
-# Установка
+Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
-## Предисловие
+- [Установка](#установка)
+    - [Предисловие](#предисловие)
+    - [Создание образа](#создание-образа)
+    - [BIOS/UEFI](#biosuefi)
+    - [Настройка сети](#настройка-сети)
+    - [Разметка диска](#разметка-диска)
+    - [Устанавливаем ядро](#устанавливаем-ядро)
+    - [Генерируем fstab](#генерируем-fstab)
+    - [arch-chroot](#archchroot)
+    - [Настраиваем дату и локаль](#настраиваем-дату-и-локаль)
+    - [Прописываем хосты](#прописываем-хосты)
+    - [Initramfs](#initramfs)
+    - [Ставим пакеты](#ставим-пакеты)
+    - [Пользователи](#пользователи)
+    - [Установка grub](#установка-grub)
+    - [Завершение](#завершение)
+- [Пакетные менеджеры](#пакетные-менеджеры)
+- [Нужные пакеты](#нужные-пакеты)
+- [Масштабировавние 150% как в Windows](#масштабировавние-150-как-в-windows)
+- [Расширения для Gnome](#расширения-для-gnome)
+- [Заменяем ядро на стабильное](#заменяем-ядро-на-стабильное)
+- [Пользовательские сочетания клавиш](#пользовательские-сочетания-клавиш)
+- [Шрифты](#шрифты)
+- [Запуск исполняемых файлов по двойному клику в Nautilus](#запуск-исполняемых-файлов-по-двойному-клику-в-nautilus)
+- [Шаблоны файлов](#шаблоны-файлов)
+- [Права](#права)
+- [Добавляем путь в PATH](#добавляем-путь-в-path)
+- [bin в домашнем каталоге](#bin-в-домашнем-каталоге)
+- [ZSH](#zsh)
+    - [Установка](#установка)
+    - [Oh My Zsh](#oh-my-zsh)
+    - [Темы](#темы)
+        - [Jovial](#jovial)
+        - [Powerlevel10k](#powerlevel10k)
+    - [Ссылки](#ссылки)
+- [cat с цветной подсветкой](#cat-с-цветной-подсветкой)
+- [Цветовые схемы для терминала](#цветовые-схемы-для-терминала)
+- [Блокируем сайты с рекламой через hosts](#блокируем-сайты-с-рекламой-через-hosts)
+- [asdf-vm](#asdfvm)
+    - [Установка:](#установка)
+    - [Git](#git)
+    - [AUR](#aur)
+    - [Удаление](#удаление)
+    - [Примеры](#примеры)
+    - [Ссылки](#ссылки)
+- [Использование NVM](#использование-nvm)
+- [Настройка Docker](#настройка-docker)
+- [Настройка Visual Code](#настройка-visual-code)
+- [Гибернация](#гибернация)
+- [RAID](#raid)
+- [Установка и настройка Postgres](#установка-и-настройка-postgres)
+- [Работаем с github через ssh](#работаем-с-github-через-ssh)
+- [Tor Service](#tor-service)
+- [Emoji](#emoji)
+- [Блокировка рекламных сайтов](#блокировка-рекламных-сайтов)
+- [Редактирование DConf](#редактирование-dconf)
+- [i3](#i3)
+    - [Описание](#описание)
+    - [Установка и настройка](#установка-и-настройка)
+    - [XTerm](#xterm)
+    - [Termite: горячие клавиши](#termite-горячие-клавиши)
+    - [Цветовые схемы Termite](#цветовые-схемы-termite)
+    - [Заставка lockscreen](#заставка-lockscreen)
+    - [Сохранение/восстановление рабочего пространства](#сохранениевосстановление-рабочего-пространства)
+- [Частые проблемы](#частые-проблемы)
+    - [Что делать, если каталоги открываются в VSCode?](#что-делать-если-каталоги-открываются-в-vscode)
+    - [Enter password to unlock your login keyring](#enter-password-to-unlock-your-login-keyring)
+- [Справка по командам и т.д.](#справка-по-командам-и-тд)
+    - [Cheat.sh](#cheatsh)
+    - [Marker](#marker)
+    - [TLDR](#tldr)
+- [Шпаргалка по командам Shell](#шпаргалка-по-командам-shell)
+
+---
+
+## Установка
+
+### Предисловие
 
 ***Arch Linux*** ‒ это один из немногих дистрибутивов Linux, использующих модель роллинг-релизов. Это означает, что в нем доступны самые последние версии пакетов. Это одновременно является его как преимуществом так и недостатком. Пересесть на него меня заставила необходимость: мое компьютерное железо (процессор ryzen 5 2600 и видеоадаптер rx 590) оказались не совместимы с версией Linux Kernel младше 4.20.
 
@@ -83,7 +89,7 @@
 
 На самом деле все не так плохо, но неприятные инциденты имеют место хотя и очень редко.
 
-## Создание образа
+### Создание образа
 
 Качаем [образ](https://www.archlinux.org/download/) и записываем его с помощью команды:
 
@@ -98,11 +104,11 @@ $ sudo dd if=/path/to/iso of=/dev/sdX bs=8M status=progress; sync
 ![image](https://user-images.githubusercontent.com/41215002/53678080-21867b80-3ccb-11e9-87a8-a4d028153a53.png)
 ![image](https://user-images.githubusercontent.com/41215002/53678082-2a774d00-3ccb-11e9-8a32-41f20d3dfd3c.png)
 
-## BIOS/UEFI
+### BIOS/UEFI
 
 При загрузке системы нажимаем F2 или Del (зависит от производителя материнской платы). Во вкладке BIOS в приоритете загрузки делаем первым наше USB-устройство. Нажимаем F10 и сохраняем настройки.
 
-## Настройка сети
+### Настройка сети
 
 При подключении от кабеля ничего настраивать не надо. Настройка wifi требует ввода пары команд:
 
@@ -113,7 +119,7 @@ wifi-menu
 
 Следует отметить, что не все usb wifi адаптеры гараниторованно поддерживаются. Например, у меня не захотел работать dexp wfa 301, а вот с tp-link все ок.
 
-## Разметка диска
+### Разметка диска
 
 Для начала посмотрим все доступные устройства:
 
@@ -146,7 +152,7 @@ mkfs.ext4 /dev/lvm/root
 mkfs.ext4 /dev/lvm/home
 ```
 
-## Устанавливаем ядро
+### Устанавливаем ядро
 
 ```bash
 mount /dev/lvm/root /mnt
@@ -154,36 +160,36 @@ mkdir /mnt/home
 mount /dev/lvm/home /mnt/home
 mkdir -p /mnt/boot/efi
 mount /dev/nvme0n1p2 /mnt/boot/efi
-# Создаем файл подкачки
+## Создаем файл подкачки
 fallocate -l 2G /mnt/swapfile
-# Если хотим использовать гибернацию
-# fallocate -l `awk '/Mem:/ {print $2}' <(free -m)`M /mnt/swapfile
+## Если хотим использовать гибернацию
+## fallocate -l `awk '/Mem:/ {print $2}' <(free -m)`M /mnt/swapfile
 chmod 600 /mnt/swapfile
 mkswap /mnt/swapfile
 swapon /mnt/swapfile
-# Устанавливаем ядро системы
+## Устанавливаем ядро системы
 pacstrap /mnt base base-devel
 ```
 
-## Генерируем fstab
+### Генерируем fstab
 
 ```bash
 genfstab /mnt >> /mnt/etc/fstab
 ```
 
-## arch-chroot
+### arch-chroot
 
 ```bash
-# Предотвращаем ошибки lvm:
-#   WARNING: Failed to connect lvmetad...
-#   WARNING: Device /dev/nvme0n1 not initialized in udev database...
+## Предотвращаем ошибки lvm:
+##   WARNING: Failed to connect lvmetad...
+##   WARNING: Device /dev/nvme0n1 not initialized in udev database...
 mkdir /mnt/hostlvm
 mount --bind /run/lvm /mnt/hostlvm
 arch-chroot /mnt
 ln -s /run/lvm /hostlvm
 ```
 
-## Настраиваем дату и локаль
+### Настраиваем дату и локаль
 
 ```bash
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -211,7 +217,7 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 Если пропустить этот шаг, то не будет запускаться терминал.
 
-## Прописываем хосты
+### Прописываем хосты
 
 ```bash
 echo "sergey-pc" > /etc/hostname
@@ -226,10 +232,10 @@ nano /etc/hosts
 ```
 127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 sergey-pc.localdomain sergey-pc
+127.0.-1 sergey-pc.localdomain sergey-pc
 ```
 
-## Initramfs
+### Initramfs
 
 Если пропустить этот шаг, то система не станет грузиться с lvm.
 
@@ -245,7 +251,7 @@ HOOKS=(base udev autodetect modconf block lvm2 filesystems keyboard fsck)
 mkinitcpio -p linux
 ```
 
-## Ставим пакеты
+### Ставим пакеты
 
 Эти пакеты понадобятся далее:
 
@@ -254,7 +260,7 @@ pacman -S sudo grub efibootmgr ntfs-3g os-prober alsa-utils xf86-video-ati gnome
 ```
 xf86-video-ati – свободный драйвер для видеокарт AMD. xorg и xorg-server отдельно ставить не нужно, так как эти пакеты есть в зависимостях.
 
-## Пользователи
+### Пользователи
 
 Задаем пароль для супер-пользователя:
 
@@ -283,7 +289,7 @@ chage -d 0 sergey
 %wheel ALL=(ALL:ALL) ALL
 ```
 
-## Установка grub
+### Установка grub
 
 ```bash
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id="Arch Linux"
@@ -307,7 +313,7 @@ GRUB_TIMEOUT=-1
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## Завершение
+### Завершение
 
 Включаем gdm для экрана логина и MetworkManager для автоматического подключения к сети:
 
@@ -319,9 +325,9 @@ systemctl enable NetworkManager
 Надо еще настроить звук:
 
 ```bash
-# Сохраним на всякий случай состояние
+## Сохраним на всякий случай состояние
 alsactl store
-# Для автоматического сохранения/восстановления значения громкости звука:
+## Для автоматического сохранения/восстановления значения громкости звука:
 systemctl enable alsa-restore
 ```
 
@@ -334,7 +340,7 @@ reboot
 
 ---
 
-# Пакетные менеджеры
+## Пакетные менеджеры
 
 Пакетным менеджером по-умолчанию для Arch Linux является pacman. Для подсветки вывода pacman в `/etc/pacman.conf` нужно раскомментировать `Color`. Пользовательским репозиторием является [AUR](https://aur.archlinux.org/). Пакеты из него можно использовать только на свой страх и риск. Чтобы не собирать пакеты из него ручками можно поставить yay:
 
@@ -356,69 +362,69 @@ makepkg -si
 
 * [Сравнеие пакетных менеджеров](https://wiki.archlinux.org/index.php/AUR_helpers_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)).
 
-# Нужные пакеты
+## Нужные пакеты
 
 Это список необходимых для меня пакетов:
 
 ```bash
-yay -Sy linux-headers \ # нужны для компиляции некоторых программ
-  wget \ # позволяет выполнять HTTP-запросы, скачивать файлы
-  curl \ # делает то же самое, что и предыдущий
-  adobe-source-code-pro-fonts \ # шрифт для терминала, нужен для темы Oh My Zsh! agnoster
-  ttf-droid \ # шрифт по-умолчанию для VScode
-  \ # шрифты по-умолчанию для Chrome
-  \ # consolas-font \
-  \ # ttf-ms-fonts \
-  arc-gtk-theme-git \ # тема для интерфейса
-  apache \ # самый популярный веб-сервер
-  apache-tools \ # содержит ab, нагрузочный клиент
-  \ # blender \ # самый простой 3D-редактор
-  dconf-editor \ # все настройки gnome в одном месте
-  dmraid \ # утилита для работы с raid-массивами дисков
-  docker-compose \ # содержит docker и docker compose
-  exfat-utils \ # добавляет поддержку файловой системы exfat
-  firefox \ # один из лучших браузеров, единственный конкурент Chrome и единственный популярный non-chromium браузер
-  flat-remix-git \ # тема с иконками
-  \ # gimp \ # скромненький аналог Photoshop
-  gnome-panel \ # я ставил только чтобы ярлыки из GUI создавать
-  google-chrome \ # лучший браузер, противники проприетарщины предпочитают chromium
-  chrome-gnome-shell \ # позволяет устанавливать расширения для Gnome
-  gparted \ # графическая оболочка для разметки дисков
-  htop \ # показывает запущенные процессы, загрузку cpu и потребление памяти
-  \ # inkscape \ # векторный графический редактор
-  \ # mariadb \ # свободная реализация самой популярной СУБД MySQL
-  mc \ # аналог виндового Far + mcedit, замена nano
-  \ # mongodb-bin \ # лучшая NoSQL база данных
-  net-tools \ # содержит netstat
-  neofetch \ # выводит в консоль информацию о системе
-  nginx \ # самый быстрый веб-сервер
-  ntfs-3g \ # добавляет поддержку файловой системы ntfs
-  \ # nvm \ # менеджер версий для Node.js
-  \ # postgresql \ # лучшая SQL база данных
-  \ # pgadmin4 \ # админка для Postgres
-  \ # pgmodeler \ # визуальный редактор для моделирования в Postgres
-  \ # phpenv \ # менеджер версий для PHP
-  \ # pyenv \ # менеджер версий для Python
-  asdf-vm \ # Заменяет собой все выше перечисленные менеджеры версий + умеет управлять базами
-  \ # redis \ # СУБД в оперативной памяти, используемая для межпроцессового взаимодействия
-  smartmontools \ # утилита для проверки состояния SSD
-  telegram-desktop-bin \ # лучший мессенджер
-  texmaker \ # редактор LaTex, генерирует PDF
-  tor \ # сервис, который можно использовать для подключения к сети Tor
-  torsocks \ # утилита torify, которая заставляет другие программы работать через Tor
-  transmission-qt \ # торрент-клиент
-  thunderbird \ # email-клиент
-  virtualbox \ # виртуальная машина, позволяет запускать Windows и Linux
-  visual-studio-code-bin \ # лучший бесплатный текстовый редактор
-  vlc \ # видеоплеер
-  websocat-bin \ # утилита для тестированя вебсокетов
-  woeusb \ # создание загрузочных флешек с Windows
-  xclip \ # копирование файла в буффер обмена из консоли
-  seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
+yay -Sy linux-headers \ ## нужны для компиляции некоторых программ
+  wget \ ## позволяет выполнять HTTP-запросы, скачивать файлы
+  curl \ ## делает то же самое, что и предыдущий
+  adobe-source-code-pro-fonts \ ## шрифт для терминала, нужен для темы Oh My Zsh! agnoster
+  ttf-droid \ ## шрифт по-умолчанию для VScode
+  \ ## шрифты по-умолчанию для Chrome
+  \ ## consolas-font \
+  \ ## ttf-ms-fonts \
+  arc-gtk-theme-git \ ## тема для интерфейса
+  apache \ ## самый популярный веб-сервер
+  apache-tools \ ## содержит ab, нагрузочный клиент
+  \ ## blender \ ## самый простой 3D-редактор
+  dconf-editor \ ## все настройки gnome в одном месте
+  dmraid \ ## утилита для работы с raid-массивами дисков
+  docker-compose \ ## содержит docker и docker compose
+  exfat-utils \ ## добавляет поддержку файловой системы exfat
+  firefox \ ## один из лучших браузеров, единственный конкурент Chrome и единственный популярный non-chromium браузер
+  flat-remix-git \ ## тема с иконками
+  \ ## gimp \ ## скромненький аналог Photoshop
+  gnome-panel \ ## я ставил только чтобы ярлыки из GUI создавать
+  google-chrome \ ## лучший браузер, противники проприетарщины предпочитают chromium
+  chrome-gnome-shell \ ## позволяет устанавливать расширения для Gnome
+  gparted \ ## графическая оболочка для разметки дисков
+  htop \ ## показывает запущенные процессы, загрузку cpu и потребление памяти
+  \ ## inkscape \ ## векторный графический редактор
+  \ ## mariadb \ ## свободная реализация самой популярной СУБД MySQL
+  mc \ ## аналог виндового Far + mcedit, замена nano
+  \ ## mongodb-bin \ ## лучшая NoSQL база данных
+  net-tools \ ## содержит netstat
+  neofetch \ ## выводит в консоль информацию о системе
+  nginx \ ## самый быстрый веб-сервер
+  ntfs-3g \ ## добавляет поддержку файловой системы ntfs
+  \ ## nvm \ ## менеджер версий для Node.js
+  \ ## postgresql \ ## лучшая SQL база данных
+  \ ## pgadmin4 \ ## админка для Postgres
+  \ ## pgmodeler \ ## визуальный редактор для моделирования в Postgres
+  \ ## phpenv \ ## менеджер версий для PHP
+  \ ## pyenv \ ## менеджер версий для Python
+  asdf-vm \ ## Заменяет собой все выше перечисленные менеджеры версий + умеет управлять базами
+  \ ## redis \ ## СУБД в оперативной памяти, используемая для межпроцессового взаимодействия
+  smartmontools \ ## утилита для проверки состояния SSD
+  telegram-desktop-bin \ ## лучший мессенджер
+  texmaker \ ## редактор LaTex, генерирует PDF
+  tor \ ## сервис, который можно использовать для подключения к сети Tor
+  torsocks \ ## утилита torify, которая заставляет другие программы работать через Tor
+  transmission-qt \ ## торрент-клиент
+  thunderbird \ ## email-клиент
+  virtualbox \ ## виртуальная машина, позволяет запускать Windows и Linux
+  visual-studio-code-bin \ ## лучший бесплатный текстовый редактор
+  vlc \ ## видеоплеер
+  websocat-bin \ ## утилита для тестированя вебсокетов
+  woeusb \ ## создание загрузочных флешек с Windows
+  xclip \ ## копирование файла в буффер обмена из консоли
+  seahorse \ ## Приложение для управления паролями, а так же PGP и SSH ключами
 
 ```
 
-# Масштабировавние 150% как в Windows
+## Масштабировавние 150% как в Windows
 
 По-умолчанию в Gnome масштабирование кратно 100. Чтобы добавить варианты масштабирования 125% и 150% нужно выполнить в терминале:
 
@@ -432,7 +438,7 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 gsettings reset org.gnome.mutter experimental-features
 ```
 
-# Расширения для Gnome
+## Расширения для Gnome
 
 Устанавливаем [расширение](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=ru) для Chrome.
 
@@ -452,7 +458,7 @@ gsettings reset org.gnome.mutter experimental-features
 | [ShellTile](https://extensions.gnome.org/extension/657/shelltile/) | Тайловый менеджер |
 | [Log Out Button](https://extensions.gnome.org/extension/1143/logout-button/) | Добавляет кнопку, которая выполняет выход из системы |
 
-# Заменяем ядро на стабильное
+## Заменяем ядро на стабильное
 
 Если надоело, что что-то ломается почти после каждого обновления ядра, запускаем терминал и выполняем:
 
@@ -462,7 +468,7 @@ yay -R linux linux-headers
 mkinitcpio -p linux
 ```
 
-# Пользовательские сочетания клавиш
+## Пользовательские сочетания клавиш
 
 В Settings → Devices → Keyboard добавляем сочетания клавиш:
 * `Ctrl + Alt + T` для запуска терминала (`gnome-terminal`);
@@ -470,14 +476,14 @@ mkinitcpio -p linux
 
 ![image](https://user-images.githubusercontent.com/41215002/53122203-1adb6400-3567-11e9-919c-a031dce832e5.png)
 
-# Шрифты
+## Шрифты
 
 Шрифты надо кидать в `/usr/share/fonts` либо в `~/.fonts` или в `~/.local/share/fonts`. После выполняем:
 
 ```bash
 $ fc-cache -f -v
 
-# Чтобы проверить установлен ли шрифт
+## Чтобы проверить установлен ли шрифт
 $ fc-list | grep "<name-of-font>"
 ```
 
@@ -488,13 +494,13 @@ $ fc-list | grep "<name-of-font>"
 * [Powrline Fonts](https://github.com/powerline/fonts);
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
 
-# Запуск исполняемых файлов по двойному клику в Nautilus
+## Запуск исполняемых файлов по двойному клику в Nautilus
 
 Заставляем Nautilus выполнять исполняемые файлы вместо открытия их в текстовом редакторе. Нужно нажать на три точки, а потом выбрать Preferences:
 
 ![image](https://user-images.githubusercontent.com/41215002/53286773-8bab9780-3784-11e9-8e41-44edba435356.png)
 
-# Шаблоны файлов
+## Шаблоны файлов
 
 Чтобы в Nautilus в контекстном меню отображался пункт `New Document`, нужно в `~/Templaytes` создать шаблоны файлов:
 
@@ -502,7 +508,7 @@ $ fc-list | grep "<name-of-font>"
 touch ~/Templates/{Empty\ Document,Text\ Document.txt,README.md,pyfile.py}
 ```
 
-# Права
+## Права
 
 4 - Чтение (r)
 2 - Запись (w)
@@ -539,7 +545,7 @@ d         | rwx      | r-x    | r-x
 
 * [Права доступа к файлам и каталогам](https://www.linuxcenter.ru/lib/books/kostromin/gl_04_05.phtml)
 
-# Добавляем путь в PATH
+## Добавляем путь в PATH
 
 * Bash Shell: `~.bash_profile`, `~/.bashrc` or `~/.profile`
 * Korn Shell: `~/.kshrc` or `~/.profile`
@@ -549,12 +555,12 @@ d         | rwx      | r-x    | r-x
 export PATH=/path/to/bin:$PATH
 ```
 
-# bin в домашнем каталоге
+## bin в домашнем каталоге
 
 ```bash
 mkdir ~/bin
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.zprofile
-# or
+## or
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
 ```
 
@@ -580,15 +586,15 @@ $ chmod +x ~/bin/hello
 Проверка:
 
 ```bash
-# Если не перелогинивались после добавления пути в ~/.zprofile, то сначала выполняем
+## Если не перелогинивались после добавления пути в ~/.zprofile, то сначала выполняем
 $ source ~/.zprofile
 $ hello $USER
 Hello, sergey!
 ```
 
-# ZSH
+## ZSH
 
-## Установка
+### Установка
 
 ```bash
 $ yay -S zsh
@@ -602,7 +608,7 @@ $ chsh -s $(which zsh)
 
 Чтобы изменения вступили в силу нужно залогиниться по-новой.
 
-## [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+### [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 Установка:
 
@@ -650,19 +656,19 @@ source $ZSH/oh-my-zsh.sh
 * [Встроенные темы](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes);
 * [Сторонние темы](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes).
 
-## Темы
+### Темы
 
-### [Jovial](https://github.com/zthxxx/jovial)
+#### [Jovial](https://github.com/zthxxx/jovial)
 
 ```bash
-# Сначала сохраняем копию zhsrc, потому как jovial изменить оригинальеный файл
+## Сначала сохраняем копию zhsrc, потому как jovial изменить оригинальеный файл
 $ cp ~/.zshrc ~/.zshrc.bak
 $ curl -sSL git.io/jovial | sudo bash -s $USER
 ```
 
 У меня эта тема упорно устанавливается в `/root/.oh-my-zsh`.
 
-### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+#### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 Это красивая тема для ZSH.
 
@@ -683,23 +689,23 @@ cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/mast
 echo 'source ~/.purepower' >>! ~/.zshrc
 ```
 
-![image](https://user-images.githubusercontent.com/12753171/60625968-d72c1d00-9dd8-11e9-902a-a0ecbe2279b1.png)
+![image](https://user-images.githubusercontent.com/12753171/60625968-d72c1d00-9dd8-11e9-902a-a0ecbe2279b-png)
 
-## Ссылки
+### Ссылки
 
 * [Приемы при работе с ZSH](http://zzapper.co.uk/zshtips.html).
 
-# cat с цветной подсветкой
+## cat с цветной подсветкой
 
 * [ccat](https://github.com/jingweno/ccat);
 * [lolcat](https://github.com/busyloop/lolcat).
 
-# [Цветовые схемы для терминала](https://github.com/Mayccoll/Gogh)
+## [Цветовые схемы для терминала](https://github.com/Mayccoll/Gogh)
 
 ```bash
-# Интерактивная установка
+## Интерактивная установка
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
-# Удаление всех тем
+## Удаление всех тем
 dconf reset -f /org/gnome/terminal/legacy/profiles:/
 ```
 
@@ -707,17 +713,17 @@ dconf reset -f /org/gnome/terminal/legacy/profiles:/
 
 * [Обзор тем](https://mayccoll.github.io/Gogh/).
 
-# Блокируем сайты с рекламой через hosts
+## Блокируем сайты с рекламой через hosts
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee --append /etc/hosts
 ```
 
-# [asdf-vm](https://github.com/asdf-vm/asdf)
+## [asdf-vm](https://github.com/asdf-vm/asdf)
 
-## Установка:
+### Установка:
 
-## Git
+### Git
 
 ```bash
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
@@ -728,7 +734,7 @@ echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
 ```
 
-## AUR
+### AUR
 
 ```bash
 yay -S asdf-vm
@@ -749,13 +755,13 @@ export PATH=/opt/asdf-vm/bin:$PATH
 
 Эту строку можно и в `~/.zshrc`.
 
-## Удаление
+### Удаление
 
 ```bash
 rm -rf ~/.asdf/ ~/.tool-versions
 ```
 
-## Примеры
+### Примеры
 
 ```bash
 $ asdf plugin-add python
@@ -766,13 +772,13 @@ $ asdf list python
   3.7.3
 $ asdf uninstall python 2.7.15
 $ asdf global python 3.7.3
-# Сделать системную версию Python глобальной
+## Сделать системную версию Python глобальной
 $ asdf global python system
 $ which python
 /home/sergey/.asdf/shims/python
 
 $ asdf plugin-add nodejs
-# see: <https://github.com/asdf-vm/asdf-nodejs#install>
+## see: <https://github.com/asdf-vm/asdf-nodejs#install>
 $ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 $ asdf install nodejs 10.16.0
 $ asdf global nodejs 10.16.0
@@ -782,11 +788,11 @@ $ which npm
 /home/sergey/.asdf/shims/npm
 $ asdf list
 golang
-  1.12
+  -12
 nodejs
   10.16.0
 postgres
-  11.4
+  1-4
 python
   2.7.15
   3.7.3
@@ -800,11 +806,11 @@ sqlite
 
 После установки через pip пакетов, которые добавляют команды, чтобы те были доступны, нужно всегда выполнять `asdf reshim python`.
 
-## Ссылки
+### Ссылки
 
 * [Документация](https://asdf-vm.com/#/core-manage-asdf-vm).
 
-# Использование [NVM](https://github.com/nvm-sh/nvm)
+## Использование [NVM](https://github.com/nvm-sh/nvm)
 
 > ⚠️ Использование [asdf-vm](#asdf-vm) предпочительнее.
 
@@ -814,13 +820,13 @@ sqlite
 nvm install node
 ```
 
-# Настройка Docker
+## Настройка Docker
 
 ```bash
 sudo systemctl start docker
 sudo systemctl enable docker
-# sudo groupadd docker
-# groupadd: group 'docker' already exists
+## sudo groupadd docker
+## groupadd: group 'docker' already exists
 sudo usermod -aG docker $USER
 ```
 
@@ -832,7 +838,7 @@ docker run hello-world
 
 [Ссылка](https://docs.docker.com/install/linux/linux-postinstall/).
 
-# Настройка Visual Code
+## Настройка Visual Code
 
 ```json
 {
@@ -853,7 +859,7 @@ docker run hello-world
 }
 ```
 
-# Гибернация
+## Гибернация
 
 Режим гибернациии от режима сна отличается тем, что в первом случае содержимое оперативной памяти сохраняется на жесткий диск и питание полностью отключается, во втором - питание подается только на оперативку. Чем хороша гибернация? - Например, мы работаем в Linux, вошли в режим гибернации, а затем загрузились в Windows и играем. Когда мы в следующий раз загрузимся в Linux, то увидим все то, что было перед выключением. Прекрасно?! Но часто ли такое нужно?
 
@@ -891,10 +897,10 @@ systemctl hibernate
 
 Чтобы появилась кнопка для перехода в режим гибернации ставим [расширение](https://extensions.gnome.org/extension/755/hibernate-status-button/).
 
-![image](https://user-images.githubusercontent.com/41215002/53138121-3f9b0000-3596-11e9-84c9-5e1277f80b31.png)
+![image](https://user-images.githubusercontent.com/41215002/53138121-3f9b0000-3596-11e9-84c9-5e1277f80b3-png)
 ![image](https://user-images.githubusercontent.com/41215002/53138158-622d1900-3596-11e9-8a53-515e39382b03.png)
 
-# RAID
+## RAID
 
 В Linux RAID на аппаратном уровне называют FakeRAID. Для работы с FakeRAID  используется пакет dmraid.
 
@@ -916,7 +922,7 @@ HOOKS=(base udev autodetect modconf block lvm2 dmraid filesystems keyboard fsck)
 sudo mkinitcpio -p linux
 ```
 
-# Установка и настройка Postgres
+## Установка и настройка Postgres
 
 ```bash
 [sergey@sergey-pc ~]$ sudo pacman -S postgresql
@@ -937,16 +943,16 @@ Please answer "y" or "n".
 Shall the new role be a superuser? (y/n) n
 Shall the new role be allowed to create databases? (y/n) y
 Shall the new role be allowed to create more new roles? (y/n) y
-[postgres@sergey-pc ~]$ createdb -O sergey sergey # создаем пользователя и БД с именами совпадающими с пользователем системы, чтобы psql запускать без параметров
+[postgres@sergey-pc ~]$ createdb -O sergey sergey ## создаем пользователя и БД с именами совпадающими с пользователем системы, чтобы psql запускать без параметров
 [postgres@sergey-pc ~]$ logout
 [sergey@sergey-pc ~]$ psql
-psql (11.1)
+psql (1-1)
 Type "help" for help.
 
 sergey=>
 ```
 
-# Работаем с github через ssh
+## Работаем с github через ssh
 
 Генерация нового ключа:
 
@@ -965,7 +971,7 @@ Created directory '/home/sergey/.ssh'.
 ```
 ...
 [remote "origin"]
-	url = git@github.com:codedumps/pgrpc.git
+  url = git@github.com:codedumps/pgrpc.git
 ...
 ```
 
@@ -980,7 +986,7 @@ git config user.email "buymethadone@gmail.com"
 git config user.name "codedumps"
 ```
 
-# Tor Service
+## Tor Service
 
 Включаем Tor:
 
@@ -998,40 +1004,40 @@ $ torify curl http://httpbin.org/ip
 }
 ```
 
-# Emoji
+## Emoji
 
 ```yay
 yay -S ttf-emojione
 ```
 
-# Блокировка рекламных сайтов
+## Блокировка рекламных сайтов
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee --append /etc/hosts
 ```
 
-# Редактирование DConf
+## Редактирование DConf
 
 DConf хранит профили терминала в `~/.config/dconf/user`, в формате GVDB [пруф](https://en.wikipedia.org/wiki/Dconf).
 
 ![image](https://user-images.githubusercontent.com/12753171/60671500-ba3c2c00-9e62-11e9-9f70-79b1bd9aed19.png)
 
 ```bash
-# Делаем дамп
+## Делаем дамп
 $ dconf dump / > /tmp/dconf
-# Редактируем и загружаем
+## Редактируем и загружаем
 $ dconf load / < /tmp/dconf
 ```
 
 ---
 
-# i3
+## i3
 
-## Описание
+### Описание
 
 ***i3*** &ndash; это тайловый оконный менеджер для Linux. Тут настройки под меня.
 
-## Установка и настройка
+### Установка и настройка
 
 ```bash
 $ yay -S awesome-terminal-fonts bumblebee-status compton fonts-powerline dmenu i3-gaps i3lock-fancy-git lxappearance nitrogen rofi scrot termite xclip
@@ -1050,79 +1056,79 @@ $ i3-config-wizard
 $ cp /etc/xdg/termite/config ~/.config/termite/config
 $ nano ~/.config/termite/config
 [options]
-# ...
+## ...
 font pango:Inconsolata, Font Awesome 10
-# ...
+## ...
 [colors]
-# ...
-# 20% background transparency (requires a compositor)
+## ...
+## 20% background transparency (requires a compositor)
 background = rgba(63, 63, 63, 0.8)
 $ cp /etc/xdg/compton.conf ~/.config
 $ nano ~/.config/i3/config
-# ...
+## ...
 font pango:Droid Sans 10
-# ...
-# Заменяем все Mod1 на $m и создаем переменную выше вызовов bindsym
+## ...
+## Заменяем все Mod1 на $m и создаем переменную выше вызовов bindsym
 set $m Mod1
 
-# lockscreen
+## lockscreen
 bindsym Ctrl+$m+l exec i3lock
 
-# Pulse Audio controls
+## Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle ## mute sound
 
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+## Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 ## increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 ## decrease screen brightness
 
-# Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+## Touchpad controls
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh ## toggle touchpad
 
-# Media player controls
+## Media player controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# rofi
+## rofi
 bindsym $m+t exec "rofi -combi-modi window,drun -show combi"
 
-# захватывает весь экран и копирует в буфер обмена
+## захватывает весь экран и копирует в буфер обмена
 bindsym --release Print exec "scrot /tmp/%F_%T_$wx$h.png -e 'xclip -selection c -t image/png < $f && rm $f'"
-# захватывает область экрана и копирует в буфер обмена
+## захватывает область экрана и копирует в буфер обмена
 bindsym --release Shift+Print exec "scrot -s /tmp/%F_%T_$wx$h.png -e 'xclip -selection c -t image/png < $f && rm $f'"
-# ...
+## ...
 bar {
   set $disk_format "{path}: {used}/{size}"
   status_command bumblebee-status -m nic disk:root disk:home cpu memory sensors pulseaudio datetime layout pacman -p root.left-click="nautilus /" root.format=$disk_format home.path=/home home.left-click="nautilus /home" home.format=$disk_format -t solarized-powerline
   position top
 }
-# ...
-# отступы между окнами
+## ...
+## отступы между окнами
 gaps outer -10
 gaps inner 20
 
 floating_minimum_size 75 x 50
 floating_maximum_size -1 x -1
-# Убрать рамки у окон:
-# 1)
-# new_window pixel 0
-# 2)
-# for_window [class="^.*"] border none
-# force floating for all new windows
-# for_window [class=".*"] floating enable
+## Убрать рамки у окон:
+## 1)
+## new_window pixel 0
+## 2)
+## for_window [class="^.*"] border none
+## force floating for all new windows
+## for_window [class=".*"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="^Telegram"] floating enable, resize set 800 600
-# Всплывающие окна браузера
+## Всплывающие окна браузера
 for_window [window_role="pop-up"] floating enable
-# no_focus [window_role="pop-up"]
-# прозрачность терминала
+## no_focus [window_role="pop-up"]
+## прозрачность терминала
 exec --no-startup-id compton --config ~/.config/compton.conf
-# смена расскладки
+## смена расскладки
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:ctrl_shift_toggle
-# восстановление заставки рабочего стола
+## восстановление заставки рабочего стола
 exec --no-startup-id nitrogen --restore
 ```
 
@@ -1139,11 +1145,11 @@ $ yay -S i3-style
 $ i3-style archlinux -o ~/.config/i3/config --reload
 ```
 
-## XTerm
+### XTerm
 
 Вместо `Ctrl+Shift+V`  нужно использовать `Shift+Ins`, а вместо `Ctrl+Shift+C` &ndash; `Ctrl+C`. Права кнопка мыши копировать, клик по колесику &ndash; вставить.
 
-## Termite: горячие клавиши
+### Termite: горячие клавиши
 
 | Сочетание <img width=450> | Значение <img width=450> |
 | -- | -- |
@@ -1167,33 +1173,33 @@ $ i3-style archlinux -o ~/.config/i3/config --reload
 
 [Отсюда](https://github.com/thestinger/termite#keybindings).
 
-## Цветовые схемы Termite
+### Цветовые схемы Termite
 
 ```bash
 $ curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base16-nord.config >> ~/.config/termite/config
 $ nano ~/.config/termite/config
-# 4-ое значение отвечает за прозрачность (1 - непрозрачно, 0 - абсолютная прозрачность)
+## 4-ое значение отвечает за прозрачность (1 - непрозрачно, 0 - абсолютная прозрачность)
 background          = rgba(40, 44, 52, 0.8)
 ```
 
-## Заставка lockscreen
+### Заставка lockscreen
 
 ```bash
 $ yay -S i3lock-fancy-git
 $ nano ~/.config/i3/config
-# параметр -B делает фоном lockscreen скриншот экрана с размытием
+## параметр -B делает фоном lockscreen скриншот экрана с размытием
 bindsym Ctrl+$m+l exec i3lock-fancy -gpf Ubuntu -- scrot -z
 ```
 
 [Репозиторий](https://github.com/khamer/base16-termite).
 
-## Сохранение/восстановление рабочего пространства
+### Сохранение/восстановление рабочего пространства
 
 ```bash
-# Сохранение
-i3-save-tree --workspace 1 > ~/.i3/workspace-1.json
-# Восстановление
-i3-msg "workspace 1; append_layout ~/.i3/workspace-1.json"
+## Сохранение
+i3-save-tree --workspace 1 > ~/.i3/workspace--json
+## Восстановление
+i3-msg "workspace 1; append_layout ~/.i3/workspace--json"
 ```
 
 Требует установки зависимостей.
@@ -1202,9 +1208,9 @@ i3-msg "workspace 1; append_layout ~/.i3/workspace-1.json"
 
 ---
 
-# Частые проблемы
+## Частые проблемы
 
-## Что делать, если каталоги открываются в VSCode?
+### Что делать, если каталоги открываются в VSCode?
 
 Существует файл /usr/share/applications/mimeinfo.cache. В нем хранятся ассоциации между mime-типами и приложениями. Его редактирование исправляет проблему, НО такое решение является временным, так как этот файл генерируется при каждом обновлении системы из *.desktop файлов.
 
@@ -1213,22 +1219,22 @@ i3-msg "workspace 1; append_layout ~/.i3/workspace-1.json"
 ```bash
 $ sudo nano /usr/share/applications/visual-studio-code.desktop
 ...
-# MimeType=text/plain;inode/directory;
+## MimeType=text/plain;inode/directory;
 ...
 $ sudo update-desktop-database /usr/share/applications
 ```
 
-## Enter password to unlock your login keyring
+### Enter password to unlock your login keyring
 
 В один прекрасный день Chrome выдаст такое предупреждение, после чего перестанут сохраняться пароли и не будет работать автозаполнение форм для логина.
 
 Решение:
 
 ```bash
-# можно нажать `Super+A` и поискать приложение `passwords and keys`
+## можно нажать `Super+A` и поискать приложение `passwords and keys`
 $ seahorse &
 
-# Если пакет не установлен
+## Если пакет не установлен
 $ yay -S seahorse
 ```
 
@@ -1252,9 +1258,9 @@ $ rm -rf ~/.config/google-chrome
 
 Теперь остается только перезапустить Chrome.
 
-# Справка по командам и т.д.
+## Справка по командам и т.д.
 
-## [Cheat.sh](https://github.com/chubin/cheat.sh)
+### [Cheat.sh](https://github.com/chubin/cheat.sh)
 
 Ищет на stackoverflow и других ресурсах справку по командам и языкам программирования.
 
@@ -1264,29 +1270,29 @@ $ rm -rf ~/.config/google-chrome
 curl https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh
 sudo chmod +x /usr/local/bin/cht.sh
 
-# Так же требуются пакеты xsel и rlwrap
+## Так же требуются пакеты xsel и rlwrap
 yay -S xsel rlwrap
 ```
 
 Использование:
 
 ```bash
-# Интерактивный режим
+## Интерактивный режим
 $ cht.sh --shell <language>
 $ cht.sh --shell bash
 type 'help' for the cht.sh shell help
 cht.sh/bash> for
-# shell - Bash 'for' loop syntax?
+## shell - Bash 'for' loop syntax?
 #
-# Replace
+## Replace
 
 for (($i=0...
 
-# with
+## with
 
 for ((i=0;i<10;i++))
 
-# [jman] [so/q/6854118] [cc by-sa 3.0]
+## [jman] [so/q/6854118] [cc by-sa 3.0]
 cht.sh/bash>
 
 $ cht.sh go create file
@@ -1303,7 +1309,7 @@ os.OpenFile(name, os.O_RDONLY|os.O_CREATE, 0666)
 // [JimB] [so/q/35558787] [cc by-sa 3.0]
 ```
 
-## [Marker](https://github.com/pindexis/marker)
+### [Marker](https://github.com/pindexis/marker)
 
 Установка:
 
@@ -1316,7 +1322,7 @@ $ git clone --depth=1 https://github.com/pindexis/marker ~/.marker && ~/.marker/
 * Ctrl-t: place the cursor at the next placeholder, identified by '{{anything}}'
 * marker remove: remove a bookmark
 
-## [TLDR](https://github.com/tldr-pages/tldr)
+### [TLDR](https://github.com/tldr-pages/tldr)
 
 Этим я пользовался до cht.sh.
 
@@ -1361,125 +1367,125 @@ $ tldr nvm
 
 ```
 
-# Шпаргалка по командам Shell
+## Шпаргалка по командам Shell
 
 ```bash
-# ==============================================================================
+## ==============================================================================
 #
-# Основы синтаксиса
+## Основы синтаксиса
 #
-# ==============================================================================
+## ==============================================================================
 
-# $1, $2, $3, ... are the positional parameters.
-# "$@" is an array-like construct of all positional parameters, {$1, $2, $3 ...}.
-# "$*" is the IFS expansion of all positional parameters, $1 $2 $3 ....
-# $# is the number of positional parameters.
-# $- current options set for the shell.
-# $$ pid of the current shell (not subshell).
-# $_ most recent parameter (or the abs path of the command to start the current shell immediately after startup).
-# $IFS is the (input) field separator.
-# $? is the most recent foreground pipeline exit status.
-# $! is the PID of the most recent background command.
-# $0 is the name of the shell or shell script.
+## $1, $2, $3, ... are the positional parameters.
+## "$@" is an array-like construct of all positional parameters, {$1, $2, $3 ...}.
+## "$*" is the IFS expansion of all positional parameters, $1 $2 $3 ....
+## $## is the number of positional parameters.
+## $- current options set for the shell.
+## $$ pid of the current shell (not subshell).
+## $_ most recent parameter (or the abs path of the command to start the current shell immediately after startup).
+## $IFS is the (input) field separator.
+## $? is the most recent foreground pipeline exit status.
+## $! is the PID of the most recent background command.
+## $0 is the name of the shell or shell script.
 
-# присвоить значение переменной
+## присвоить значение переменной
 x=42
 
-# Для вывода используем echo и printf
+## Для вывода используем echo и printf
 echo "x=$x"
 echo "x=${x}"
 printf "x=%s\n" x
 
-# Если переменная не задана, то присваиваем ей дефолтное значение
+## Если переменная не задана, то присваиваем ей дефолтное значение
 x=${x:-default}
 
-# $ { varname :- word }
-# If varname exists and isn’t null, return its value; otherwise return word.
+## $ { varname :- word }
+## If varname exists and isn’t null, return its value; otherwise return word.
 
-# Purpose:
-# Returning a default value if the variable is undefined.
+## Purpose:
+## Returning a default value if the variable is undefined.
 
-# Example:
-# ${count:-0} evaluates to 0 if count is undefined.
+## Example:
+## ${count:-0} evaluates to 0 if count is undefined.
 
-# $ { varname := word}
-# If varname exists and isn’t null, return its value; otherwise set it to word and then return its value. Positional and special parameters cannot be assigned this way.
+## $ { varname := word}
+## If varname exists and isn’t null, return its value; otherwise set it to word and then return its value. Positional and special parameters cannot be assigned this way.
 
-# Purpose:
-# Setting a variable to a default value if it is undefined.
+## Purpose:
+## Setting a variable to a default value if it is undefined.
 
-# Example:
-# $ {count := 0} sets count to 0 if it is undefined.
+## Example:
+## $ {count := 0} sets count to 0 if it is undefined.
 
-# $ { varname :? message }
-# If varname exists and isn’t null, return its value; otherwise print varname : followed by message, and abort the current command or script (non-interactive shells only). Omitting message produces the default message parameter null or not set.
+## $ { varname :? message }
+## If varname exists and isn’t null, return its value; otherwise print varname : followed by message, and abort the current command or script (non-interactive shells only). Omitting message produces the default message parameter null or not set.
 
-# Purpose:
-# Catching errors that result from variables being undefined.
+## Purpose:
+## Catching errors that result from variables being undefined.
 
-# Example:
-# {count :?” undefined! " } prints “count: undefined!” and exits if count is undefined.
+## Example:
+## {count :?” undefined! " } prints “count: undefined!” and exits if count is undefined.
 
-# $ { varname :+word }
-# If varname exists and isn’t null, return word; otherwise return null.
+## $ { varname :+word }
+## If varname exists and isn’t null, return word; otherwise return null.
 
-# Purpose:
-# Testing for the existence of a variable.
+## Purpose:
+## Testing for the existence of a variable.
 
-# Example:
-# $ {count :+ 1} returns 1 (which could mean “true”) if count is defined.
+## Example:
+## $ {count :+ 1} returns 1 (which could mean “true”) if count is defined.
 
 
-# $ { varname : offset }
-# $ { varname : offset:length }
+## $ { varname : offset }
+## $ { varname : offset:length }
 
-# Purpose:
-# Returning parts of a string (substrings or slices).
+## Purpose:
+## Returning parts of a string (substrings or slices).
 
-# Example:
-# If count is set to frogfootman, $ {count :4} returns footman. $ {count :4:4} returns foot.
+## Example:
+## If count is set to frogfootman, $ {count :4} returns footman. $ {count :4:4} returns foot.
 
-# Экспорт глобальной переменной
+## Экспорт глобальной переменной
 export VAR=42
 
-# Генерация строк с помощью Brace expansion
+## Генерация строк с помощью Brace expansion
 $ echo a{d,c,b}e
 ade ace abe
 
-# Массивы
+## Массивы
 
 arr=(Hello World)
 
 echo ${arr[0]} ${arr[1]}
 
-${arr[*]} # Все записи в массиве
-${!arr[*]} # Все индексы в массиве
-${#arr[*]} # Количество записей в массиве
-${#arr[0]} # Длина первой записи (нумерация с нуля)
+${arr[*]} ## Все записи в массиве
+${!arr[*]} ## Все индексы в массиве
+${#arr[*]} ## Количество записей в массиве
+${#arr[0]} ## Длина первой записи (нумерация с нуля)
 
 array=(one two three four [5]=five)
 
-echo "Array size: ${#array[*]}"  # Выводим размер массива
+echo "Array size: ${#array[*]}"  ## Выводим размер массива
 
-echo "Array items:" # Выводим записи массива
+echo "Array items:" ## Выводим записи массива
 for item in ${array[*]}
 do
   printf "   %s\n" $item
 done
 
-echo "Array indexes:" # Выводим индексы массива
+echo "Array indexes:" ## Выводим индексы массива
 for index in ${!array[*]}
 do
   printf "   %d\n" $index
 done
 
-echo "Array items and indexes:" # Выводим записи массива с их индексами
+echo "Array items and indexes:" ## Выводим записи массива с их индексами
 for index in ${!array[*]}
 do
   printf "%4d: %s\n" $index ${array[$index]}
 done
 
-# Следующий пример покажет, как кавычки и конструкции без кавычек возвращают строки (особенно важно, когда в этих строках есть пробелы):
+## Следующий пример покажет, как кавычки и конструкции без кавычек возвращают строки (особенно важно, когда в этих строках есть пробелы):
 
 array=("first item" "second item" "third" "item")
 
@@ -1513,7 +1519,7 @@ do
   printf "   %s\n" "${arr[$ix]}"
 done
 
-# Циклы
+## Циклы
 
 for i in $(seq 1 10);
 do
@@ -1546,7 +1552,7 @@ while [ "$i" -le "$num" ]; do
   i=$(( i + 1 ))
 done
 
-# Условия
+## Условия
 
 if [ "$seconds" -eq 0 ]; then
   timezone_string="Z"
@@ -1556,102 +1562,102 @@ else
   echo "Unknown parameter"
 fi
 
-# В условиях нужно использовать двойные скобки
+## В условиях нужно использовать двойные скобки
 
-# [ is just a regular command with a weird name.
-# ] is just an argument of [ that prevents further arguments from being used.
+## [ is just a regular command with a weird name.
+## ] is just an argument of [ that prevents further arguments from being used.
 
-# [[ a = a && b = b ]]: true, logical and
-# [ a = a && b = b ]: syntax error, && parsed as an AND command separator cmd1 && cmd2just an argument of [ that prevents further arguments from being used.
+## [[ a = a && b = b ]]: true, logical and
+## [ a = a && b = b ]: syntax error, && parsed as an AND command separator cmd1 && cmd2just an argument of [ that prevents further arguments from being used.
 
-# x='a b'; [[ $x = 'a b' ]]: true, quotes not needed
-# x='a b'; [ $x = 'a b' ]: syntax error, expands to [ a b = 'a b' ]
+## x='a b'; [[ $x = 'a b' ]]: true, quotes not needed
+## x='a b'; [ $x = 'a b' ]: syntax error, expands to [ a b = 'a b' ]
 
-# Подробнее тут:
-#   <https://stackoverflow.com/a/47576482>
+## Подробнее тут:
+##   <https://stackoverflow.com/a/47576482>
 
-# -eq
-# is equal to
+## -eq
+## is equal to
 
 [ "$a" -eq "$b" ]
 
-# -ne
-# is not equal to
+## -ne
+## is not equal to
 
 [ "$a" -ne "$b" ]
 
-# -gt
-# is greater than
+## -gt
+## is greater than
 
 [ "$a" -gt "$b" ]
 
-# -ge
-# is greater than or equal to
+## -ge
+## is greater than or equal to
 
 [ "$a" -ge "$b" ]
 
-# -lt
-# is less than
+## -lt
+## is less than
 
 [ "$a" -lt "$b" ]
 
-# -le
-# is less than or equal to
+## -le
+## is less than or equal to
 
 [ "$a" -le "$b" ]
 
-# <
-# is less than (within double parentheses)
+## <
+## is less than (within double parentheses)
 
 (("$a" < "$b"))
 
-# <=
-# is less than or equal to (within double parentheses)
+## <=
+## is less than or equal to (within double parentheses)
 
 (("$a" <= "$b"))
 
-# >
-# is greater than (within double parentheses)
+## >
+## is greater than (within double parentheses)
 
 (("$a" > "$b"))
 
-# >=
-# is greater than or equal to (within double parentheses)
+## >=
+## is greater than or equal to (within double parentheses)
 
 (("$a" >= "$b"))
 
-# <http://tldp.org/LDP/abs/html/comparison-ops.html>
+## <http://tldp.org/LDP/abs/html/comparison-ops.html>
 
-# [ ‒ это всего лишь команда, последним аргументом которой всегда должна быть "]"! Все операторы описаны в man'е:
+## [ ‒ это всего лишь команда, последним аргументом которой всегда должна быть "]"! Все операторы описаны в man'е:
 man [
 
-# Это вполне себе валидное выражение
+## Это вполне себе валидное выражение
 "[" 1 -eq 0 "]" || echo fail
 
-# Строка слева всегда имя переменной
+## Строка слева всегда имя переменной
 x=42; [[ "x" -eq "42" ]] || echo fail
 
-# выражение слева всегда переменная
+## выражение слева всегда переменная
 
 case $VAR in
   foo) ... ;;
   bar) ... ;;
-  # Все остальные значения
+  ## Все остальные значения
   *) ... ;;
 esac
 
-# Объявление функции
+## Объявление функции
 foo() {
-  # Аргументы функции
-  $1..$N
-  # Локальная переменная
+  ## Аргументы функции
+  $-.$N
+  ## Локальная переменная
   local x=42
   ...
-  # Теперь в $1 будет $2, в $2 ‒ $3 и т.д.
+  ## Теперь в $1 будет $2, в $2 ‒ $3 и т.д.
   shift
 }
 
-# Экспорт функции
+## Экспорт функции
 export -f foo
 
 die() { echo "$*" 1>&2 ; exit 1; }
@@ -1660,102 +1666,102 @@ die "Kaboom"
 
 [ "$#" -eq 2] || die "Needs 2 arguments, input and output"
 
-# The syntax is token-level, so the meaning of the dollar sign depends on the token it's in. The expression $(command) is a modern synonym for `command` which stands for command substitution; it means, run command and put its output here. So
+## The syntax is token-level, so the meaning of the dollar sign depends on the token it's in. The expression $(command) is a modern synonym for `command` which stands for command substitution; it means, run command and put its output here. So
 
 echo "Today is $(date). A fine day."
 
-# Управление выводом
+## Управление выводом
 
-# Направить stdout одной программы в stdin другой
+## Направить stdout одной программы в stdin другой
 command1 | command2
 
-# Перенаправление stdout и stderr
+## Перенаправление stdout и stderr
 command1 |& command2
 
-# Создать либо перезаписать файл, добавив строку
+## Создать либо перезаписать файл, добавив строку
 command > out
 
-# Создать файл, если его не существует и дописать строку в конец
+## Создать файл, если его не существует и дописать строку в конец
 command >> out
 
-# Направить stderr команды в файл
+## Направить stderr команды в файл
 command 2>&1 out
 
-# stdout 2-ой команды, является stdin для первой
+## stdout 2-ой команды, является stdin для первой
 command1 <<< command2
 
-# Вывод многострочного текста
+## Вывод многострочного текста
 cat <<EOF
 хуй
 пизда
 джигурда
 EOF
 
-# ==============================================================================
+## ==============================================================================
 #
-# Написание скриптов
+## Написание скриптов
 #
-# ==============================================================================
+## ==============================================================================
 
-# Первой строкой скрипта идет Shebang, торый указывает какой интерпретатор использовать
+## Первой строкой скрипта идет Shebang, торый указывает какой интерпретатор использовать
 
 #!/usr/bin/env bash
 
-# Так же часто делают каталог скрипта рабочим (по-умолчанию рабочим является тот откуда запустили скрипт)
+## Так же часто делают каталог скрипта рабочим (по-умолчанию рабочим является тот откуда запустили скрипт)
 cd "$(dirname "$0")"
 
-# ==============================================================================
+## ==============================================================================
 #
-# Выполнение скриптов
+## Выполнение скриптов
 #
-# ==============================================================================
+## ==============================================================================
 
-# Сделать файл исполняемым
+## Сделать файл исполняемым
 $ chmod +x /path/to/file
 
-# Выполнит скрипт в текущем процессе (переменные и функции, объявленные внутри скрипта станут доступны в терминале)
+## Выполнит скрипт в текущем процессе (переменные и функции, объявленные внутри скрипта станут доступны в терминале)
 $ source /path/to/file
 
-# ==============================================================================
+## ==============================================================================
 #
-# Запуск команд
+## Запуск команд
 #
-# ==============================================================================
+## ==============================================================================
 
-# Запустить процесс и вернуть его дескриптор (при закрытии терминала будет остановлена)
+## Запустить процесс и вернуть его дескриптор (при закрытии терминала будет остановлена)
 $ command &
 
-# То же самое за исключением того, что процесс не будет остановлен при закрытии терминала
+## То же самое за исключением того, что процесс не будет остановлен при закрытии терминала
 $ nohup command &
 
-# ==============================================================================
+## ==============================================================================
 #
-# Пакеты
+## Пакеты
 #
-# ==============================================================================
+## ==============================================================================
 
-# Установить пакет
+## Установить пакет
 $ yay -S <package>
 
-# Удалить пакет
+## Удалить пакет
 $ yay -Rns <package>
 
-# Обновить все установленные пакеты
+## Обновить все установленные пакеты
 $ yay -Syu
 
-# Обновить в т.ч. с пакетами для разработчика
+## Обновить в т.ч. с пакетами для разработчика
 $ yay -Syu --devel --timeupdate
 
-# Удалить все ненужные зависимости
+## Удалить все ненужные зависимости
 $ yay -Yc
 
-# Статистика по пакетами
+## Статистика по пакетами
 $ yay -Ps
 
-# Generates development package DB used for devel updates
+## Generates development package DB used for devel updates
 $ yay -Y --gendb
 
-# Ошибки с удалением зависимостей
+## Ошибки с удалением зависимостей
 
 $ yay -Rns gnome-extra
 checking dependencies...
@@ -1763,21 +1769,21 @@ error: failed to prepare transaction (could not satisfy dependencies)
 :: nautilus: removing nautilus-sendto breaks dependency 'nautilus-sendto'
 $ yay -Rdd nautilus-sendto
 
-# Теперь можно снести gnome-extra
+## Теперь можно снести gnome-extra
 
-# ==============================================================================
+## ==============================================================================
 #
-# systemd
+## systemd
 #
-# ==============================================================================
+## ==============================================================================
 
-# Все сервисы
+## Все сервисы
 
-# Покажут только включенные
+## Покажут только включенные
 $ systemctl
 $ systemctl list-units --type service
 
-# + выключенные
+## + выключенные
 $ systemctl list-unit-files --type service
 
 $ sudo systemctl enable docker
@@ -1792,348 +1798,348 @@ $ sudo systemctl start application.service
 
 $ systemctl status nginx.service
 
-# ==============================================================================
+## ==============================================================================
 #
-# Текст
+## Текст
 #
-# ==============================================================================
+## ==============================================================================
 
-# Замена в тексте
+## Замена в тексте
 $ echo "This is a test" | sed 's/test/another test/'
 
-# Ключ -e позволяет выполнить несколько команд:
-#   sed -e 's/This/That/; s/test/another test/'
+## Ключ -e позволяет выполнить несколько команд:
+##   sed -e 's/This/That/; s/test/another test/'
 
-# Перевод регистра
+## Перевод регистра
 $ echo lowercase | tr '[:lower:]' '[:upper:]'
 LOWERCASE
 
-# ==============================================================================
+## ==============================================================================
 #
-# Файловая система
+## Файловая система
 #
-# ==============================================================================
+## ==============================================================================
 
-# Список разделов
+## Список разделов
 $ sudo fdisk -l
 
-# В Linux все файлы. Регулярные файлы ‒ обычные файлы, каталоги ‒ это файлы содержащие список файлов и т.д.
+## В Linux все файлы. Регулярные файлы ‒ обычные файлы, каталоги ‒ это файлы содержащие список файлов и т.д.
 
-# Перемещение/переименование файла
+## Перемещение/переименование файла
 $ mv <src> <dst>
 
-# Копирование файлов
+## Копирование файлов
 $ cp <src> <dst>
 
-# Копировать каталог и все вложенные файлы
+## Копировать каталог и все вложенные файлы
 $ cp -r <src> <dst>
 
-# Полный путь до файла
+## Полный путь до файла
 $ realpath example.txt
 /home/username/example.txt
 
-# Листинг каталога
+## Листинг каталога
 $ ls
 $ tldr ls
 
-# Вывести информацию о владельце и группе файла
+## Вывести информацию о владельце и группе файла
 $ ls -ld /path/to/file
 $ stat /path/to/file
 
-# Вывести все вложенные файлы
+## Вывести все вложенные файлы
 $ ls -R <path>
 $ find <path> -print
-# Покажет имя и размер
+## Покажет имя и размер
 $ du -a <path>
 
-# Создание каталога
+## Создание каталога
 $ mkdir <target>
 
-# Создание каталога вместе с родительскими каталогами, если тех не существует
+## Создание каталога вместе с родительскими каталогами, если тех не существует
 $ mkdir -p <target>
 
-# Создать каталог с определенными правами
+## Создать каталог с определенными правами
 $ mkdir -m 0750 <directory>
 
-# Создание множества каталогов
+## Создание множества каталогов
 $ mkdir foo bar baz
-# или
+## или
 $ mkdir prefix-{foo,bar,baz}
 
-# Такой же трюк работает при создании файлов
+## Такой же трюк работает при создании файлов
 $ touch {foo,bar,baz}.txt
 
-# Создать мягкую ссылку на файл либо заменить ее новой
+## Создать мягкую ссылку на файл либо заменить ее новой
 $ ln -sf path/to/new_file path/to/symlink
 
-# Мягкая ссылка содержит путь до файла. Жесткая ссылается на inode, искомый
-# файл при перемещении остается доступен по ссылке и невозможно ссылаться на
-# файл на другом устройстве
+## Мягкая ссылка содержит путь до файла. Жесткая ссылается на inode, искомый
+## файл при перемещении остается доступен по ссылке и невозможно ссылаться на
+## файл на другом устройстве
 
-# Заархивировать каталог
+## Заархивировать каталог
 $ tar -czvf filename.tar.gz directory
 
-# Для извлечения файлов проще всего пользоваться плагином Oh My ZSH extract
+## Для извлечения файлов проще всего пользоваться плагином Oh My ZSH extract
 
-# Извлечь архив и удалить его (ключ -r)
+## Извлечь архив и удалить его (ключ -r)
 $ extract -r <filename>
 
-# Слияние файлов в один
-$ paste file1.txt file2.txt > fileresults.txt
+## Слияние файлов в один
+$ paste file-txt file2.txt > fileresults.txt
 
-# Удалить файлы старше 5 дней
+## Удалить файлы старше 5 дней
 $ find /path/to/files* -mtime +5 -exec rm {} \;
 
-# Поиск фала по имени в специальной базе
+## Поиск фала по имени в специальной базе
 $ locate -e login.keyring
 /home/sergey/.local/share/keyrings/login.keyring
 
-# Установка
+## Установка
 $ yay -S mlocate
 
-# Перед первым запуском следует выполнить
+## Перед первым запуском следует выполнить
 $ sudo updatedb
 
-# После установки будет доступен сервис updatedb.timer, который будет ежедневно обновлять базу
+## После установки будет доступен сервис updatedb.timer, который будет ежедневно обновлять базу
 
-# Стастика
+## Стастика
 $ locate -S
 Database /var/lib/mlocate/mlocate.db:
-	157 512 directories
-	1 384 522 files
-	119 423 666 bytes in file names
-	38 722 751 bytes used to store database
+  157 512 directories
+  1 384 522 files
+  119 423 666 bytes in file names
+  38 722 751 bytes used to store database
 
-# Покажет что куда смонтировано (можно свободное место узнать)
+## Покажет что куда смонтировано (можно свободное место узнать)
 $ df -h --total
 
-# Узнать на каком разделе смонтирован каталог
+## Узнать на каком разделе смонтирован каталог
 $ df -h /tmp
 
-# Просмотр числа inode
+## Просмотр числа inode
 $ df -i
 
-# Просмотр содержимого фйала с навигацией
+## Просмотр содержимого фйала с навигацией
 $ less /path/to/file
 
-# или более короткая версия в ZSH
+## или более короткая версия в ZSH
 $ < /path/to/file
 
-# Просмотр логов в обратном порядке
+## Просмотр логов в обратном порядке
 $ tail -r /var/log/syslog | less
 
-# Вывести строки не соответствующие шаблону
+## Вывести строки не соответствующие шаблону
 $ grep -Pv <exclude_pattern> <filename>
 
-# Создать файл, забитый null-байтами
+## Создать файл, забитый null-байтами
 $ dd if=/dev/zero of=/tmp/nullbytes bs=1M count=1
 
-# Конфертировать .md в .rst
+## Конфертировать .md в .rst
 $ pip install m2r
 $ m2r --help
 
-# Конвертировать .webp в .png
+## Конвертировать .webp в .png
 $ yay -S libwebp
 $ dwebp file.webp -o file.png
 
-# Вывод содержимого файла с подсветкой синтаксиса
+## Вывод содержимого файла с подсветкой синтаксиса
 $ yay -S ccat
 $ ccat ./file
 
-# Вывести файлы в каталоге, отсортировав их по времени до доступа
+## Вывести файлы в каталоге, отсортировав их по времени до доступа
 $ ls -ltu <path>
 
-# Увеличиваем размер логического раздела
+## Увеличиваем размер логического раздела
 $ sudo lvresize -L +10GB /dev/mapper/lvm-root
 
-# После lvresize нужно обязательно изменить размер файловой системы
+## После lvresize нужно обязательно изменить размер файловой системы
 $ sudo resize2fs /dev/mapper/lvm-root
 
-# Делает то же самое, что и две команды выше
+## Делает то же самое, что и две команды выше
 $ sudo lvresize -r -L +10GB /dev/mapper/lvm-root
 
-# Список логических разделов LVM
+## Список логических разделов LVM
 $ sudo lvscan
   ACTIVE            '/dev/lvm/root' [40.00 GiB] inherit
   ACTIVE            '/dev/lvm/home' [20.00 GiB] inherit
 
-# Изменить размер каталога /tmp
+## Изменить размер каталога /tmp
 $ mount -o remount,size=4G /tmp/
 
-# Подробная информация о диске
+## Подробная информация о диске
 $ sudo smartctl -a /dev/nvme0
 
-# ==============================================================================
+## ==============================================================================
 #
-# Сеть
+## Сеть
 #
-# ==============================================================================
+## ==============================================================================
 
-# Показать все прослушиваемые и установленные порты TCP и UDP вместе с PID
-# связанного процесса
+## Показать все прослушиваемые и установленные порты TCP и UDP вместе с PID
+## связанного процесса
 $ netstat -plantu
 
-# Все запущенные сервера на хосте
+## Все запущенные сервера на хосте
 $ netstat -lnt
 
-# ==============================================================================
+## ==============================================================================
 #
-# Шрифты
+## Шрифты
 #
-# ==============================================================================
+## ==============================================================================
 
-# Список установленных шрифтов
+## Список установленных шрифтов
 $ fc-list
 
-# Обновить базу шрифтов после добавления/удаления их в/из `/usr/share/fonts`
-# либо `~/.local/share/fonts`
+## Обновить базу шрифтов после добавления/удаления их в/из `/usr/share/fonts`
+## либо `~/.local/share/fonts`
 $ fc-cache -f -v
 
-# ==============================================================================
+## ==============================================================================
 #
-# Буфер обмена
+## Буфер обмена
 #
-# ==============================================================================
+## ==============================================================================
 
 $ yay -S xclip
 
-# Скопировать текст в буфер обмена
+## Скопировать текст в буфер обмена
 $ echo 123 | xclip -sel clip
 
-# Копировать содержимое файла в буфер обмена
+## Копировать содержимое файла в буфер обмена
 $ xclip -sel clip < ~/.ssh/github_rsa.pub
 
-# Вывести содержимое буфера обмена
+## Вывести содержимое буфера обмена
 $ xclip -o -sel clip
 
-# Конвертировать файл в base64 и скопировать в буфер обмена
+## Конвертировать файл в base64 и скопировать в буфер обмена
 $ file="test.docx"
 $ base64 -w 0 $file  | xclip -selection clipboard
 
-# ==============================================================================
+## ==============================================================================
 #
-# Git
+## Git
 #
-# ==============================================================================
+## ==============================================================================
 
-# Первоначальная настройка (без флага --global локального проекта)
+## Первоначальная настройка (без флага --global локального проекта)
 $ git config --global user.name <yourname>
 $ git config --global user.email <email>
 
-# Сменить ветку
+## Сменить ветку
 $ git checkout <branchname>
 
-# Создать ветку и переключится на нее
+## Создать ветку и переключится на нее
 $ git checkout -b <branchname>
 
-# Объединить текущую ветку с branchname
+## Объединить текущую ветку с branchname
 $ git merge <branchname>
 
-# Добавить изменения (все файлы в каталоге и вложеннхы)
+## Добавить изменения (все файлы в каталоге и вложеннхы)
 $ git add .
 
-# Закоммитить изменения (сделать описание)
+## Закоммитить изменения (сделать описание)
 $ git commit -m "Тест"
 
-# Если не были добавлены новые файлы, а лишь производились изменения в уже добавленных, то можно использовать только одну команду
+## Если не были добавлены новые файлы, а лишь производились изменения в уже добавленных, то можно использовать только одну команду
 $ git commit -am "Тест"
 
-# Обновить репозиторий на сервере
+## Обновить репозиторий на сервере
 $ git push
 
-# Выгрузить изменения с сервера (тоже самое, что git fetch + git merge)
+## Выгрузить изменения с сервера (тоже самое, что git fetch + git merge)
 $ git pull
 
-# Копировать репозиторий
+## Копировать репозиторий
 $ git clone https://github.com/someuser/repo.git [<assigneddirectory>]
 
-# Посмотреть историю
+## Посмотреть историю
 $ git log --graph --oneline --decorate --all
 
-# Посмотреть отличия по сравнения с предыдущей версией
+## Посмотреть отличия по сравнения с предыдущей версией
 $ git diff 871d36b [<filename>]
 
-# Сохранить изменения
+## Сохранить изменения
 $ git stash [save "my stash message here"]
 
-# Удалить stach и применить его
+## Удалить stach и применить его
 $ git stash pop [stash@{1}]
 
-# Список stash
+## Список stash
 $ git stash list
 
-# Посмотреть что там лежит
+## Посмотреть что там лежит
 $ git stash show stash@{0}
 
 $ git stash apply
 $ git stash drop stash@{2}
 $ git stash clear
 
-# List all the tags:
+## List all the tags:
 
 $ git tag
 
-# Search tags for a particular pattern:
+## Search tags for a particular pattern:
 
 $ git tag -l <tag-pattern>
 
-# Show a tag data:
+## Show a tag data:
 
 $ git show <tag-name>
 
-# Create a Lightweight Tag:
+## Create a Lightweight Tag:
 
 $ git tag <tag-name>
 
-# Create an Annotated Tag:
+## Create an Annotated Tag:
 
 $ git tag -a <tag-name> -m <tag-message>
 
-# Create a tag for a specific commit:
+## Create a tag for a specific commit:
 
 $ git tag -a <tag-name> <commit-checksome>
 
-# Push a specific tag to remote:
+## Push a specific tag to remote:
 
 $ git push origin <tag-name>
 
-# Push all the tags to remote:
+## Push all the tags to remote:
 
 $ git push origin --tags
 
-# Checkout a specific to local:
+## Checkout a specific to local:
 
 $ git checkout -b <branch-name> <tag-name>
 
-# ==============================================================================
+## ==============================================================================
 #
-# Языковые настройки
+## Языковые настройки
 #
-# ==============================================================================
+## ==============================================================================
 
-# Список влюченных локалей
+## Список влюченных локалей
 $ locale -a
 
-# Добавление локалей
+## Добавление локалей
 
-# В этом файле находится список всех поддерживаемых локалей
-# Раскомментируем нужную
+## В этом файле находится список всех поддерживаемых локалей
+## Раскомментируем нужную
 $ sudo nano /etc/locale.gen
 
-# Генерируем локали
+## Генерируем локали
 $ sudo locale-gen
 
-# Можно так же локали так добавлять
+## Можно так же локали так добавлять
 $ sudo locale-gen de_DE.UTF-8
 
-# Меняем язык системы (нужно перегрузиться)
+## Меняем язык системы (нужно перегрузиться)
 echo "LANG=de_DE.UTF-8" > /etc/locale.conf
 
-# ==============================================================================
+## ==============================================================================
 #
-# Генерация паролей
+## Генерация паролей
 #
-# ==============================================================================
+## ==============================================================================
 
 $ yay -S pwgen
 $ pwgen -cnsy 10 1
@@ -2145,38 +2151,38 @@ backdrop-unruly-yodel
 $ xkcdpass -n 3 -d - --min 2 --max 6
 shrank-trio-thong
 
-# ==============================================================================
+## ==============================================================================
 #
-# Прочее
+## Прочее
 #
-# ==============================================================================
+## ==============================================================================
 
-# Перегрузить Shell
+## Перегрузить Shell
 $ exec "$SHELL"
 
-# Список всех доступных команд
+## Список всех доступных команд
 $ compgen -c
 
-# Ищем Chrome
+## Ищем Chrome
 $ compgen -c | grep chrome
 google-chrome-stable
 chrome-gnome-shell
 google-chrome
 
-# Просмотр логов в реальном времени
+## Просмотр логов в реальном времени
 $ journalctl -f
 
-# Изменить размер терминала
+## Изменить размер терминала
 $ gnome-terminal --geometry 135x45
 
-# Документация по командам
+## Документация по командам
 $ tldr cat
 $ tldr --search create file
 
-# Сделать дам базы
+## Сделать дам базы
 $ pg_dump -d test -f /tmp/schema.sql
 
-# Мониторинг процессов
+## Мониторинг процессов
 $ yay -S htop
 $ htop
 ```
