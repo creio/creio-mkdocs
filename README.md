@@ -11,7 +11,7 @@ MkDocs Material Starter Kit. Deploy documentation to hosting platforms (Netlify,
 - [Create docs](#create-docs)
     - [Configure](#configure)
     - [Mkdocs local](#mkdocs-local)
-    - [Github pages](#github-pages)
+- [Github pages](#github-pages)
 
 ---
 
@@ -59,12 +59,12 @@ Create symlink `README.md` --> `docs/index.md`.
 
 File `netlify.toml` custom build command.
 
-### Github pages
+## Github pages
 
 Github pages, no Netlify. Method 2.
 
 - [Fork repo](https://github.com/creio/mkdocs).
-- Open url `https://github.com/[GITHUB_USER]/[GITHUB_REPO]/settings` GitHub Pages - Source, gh-pages branch.
+- Open url `https://github.com/[GITHUB_USER]/[GITHUB_REPO]/settings`. GitHub Pages - Source, gh-pages branch.
 - `git clone https://github.com/[GITHUB_USER]/[GITHUB_REPO]/`.
 - Repeat [Mkdocs local](#mkdocs-local).
 
