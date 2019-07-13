@@ -19,7 +19,7 @@ MkDocs Material Starter Kit. Deploy documentation to hosting platforms (Netlify,
 
 Create Netlify project & Github repo. Method 1.
 
-- [Open url](https://app.netlify.com/start/deploy?repository=https://github.com/creio/mkdocs).
+- [Open url](https://app.netlify.com/start/deploy?repository=https://github.com/creio/creio-mkdocs).
 - `git clone https://github.com/[GITHUB_USER]/[GITHUB_REPO]/`.
 - `cd [GITHUB_REPO]`.
 
@@ -28,9 +28,9 @@ Create Netlify project & Github repo. Method 1.
 Edit `mkdocs.yml`.
 
 ```sh
-site_url: https://mkdocs.netlify.com/
-repo_name: creio/mkdocs
-repo_url: https://github.com/creio/mkdocs
+site_url: https://creio-mkdocs.netlify.com/
+repo_name: creio/creio-mkdocs
+repo_url: https://github.com/creio/creio-mkdocs
 ```
 
 ### Mkdocs local
@@ -63,8 +63,7 @@ File `netlify.toml` custom build command.
 
 Github pages, no Netlify. Method 2.
 
-- [Fork repo](https://github.com/creio/mkdocs).
-- Open url `https://github.com/[GITHUB_USER]/[GITHUB_REPO]/settings`. GitHub Pages - Source, gh-pages branch.
+- [Fork repo](https://github.com/creio/creio-mkdocs).
 - `git clone https://github.com/[GITHUB_USER]/[GITHUB_REPO]/`.
 - Repeat [Mkdocs local](#mkdocs-local).
 
@@ -73,3 +72,7 @@ Build & push.
 ```sh
 ./task.sh -d
 ```
+
+Open url `https://github.com/[GITHUB_USER]/[GITHUB_REPO]/settings`. GitHub Pages - Source, gh-pages branch.
+
+Site url: `https://[GITHUB_USER]/github.io/[GITHUB_REPO]`

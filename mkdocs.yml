@@ -4,8 +4,8 @@ site_author: Alex Creio
 # site_url: https://mkdocs.netlify.com/
 
 # Repository
-repo_name: creio/mkdocs
-repo_url: https://github.com/creio/mkdocs
+repo_name: creio/creio-mkdocs
+repo_url: https://github.com/creio/creio-mkdocs
 # edit_uri: edit/master
 edit_uri: ""
 # Copyright
