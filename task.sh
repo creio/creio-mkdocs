@@ -1,10 +1,25 @@
 #!/usr/bin/env bash
 
-# Fail on unset variables and command errors
-set -e -o pipefail # -x: is for debugging
+### Create, build & deploy Netlify
+# https://app.netlify.com/start/deploy?repository=https://github.com/creio/awesome-arch/
+# git clone https://github.com/creio/awesome-arch/
+# cd awesome-arch
+## edit mkdocs.yml url, repo
+# site_url: https://awesome-arch.netlify.com/
+# repo_name: creio/awesome-arch
+# repo_url: https://github.com/creio/awesome-arch
 
-DOCKER_IMAGE="peaceiris/mkdocs-material"
-DOCS_DIR="/root"
+### Start mkdocs project local, Arch Linux user virtualenv python
+# pacman -S python-pip
+# pip install --upgrade --user virtualenv
+# virtualenv ve
+# source ve/bin/activate
+# pip install -r requirements.txt
+# ./task.sh -h
+# Create symlink README.md --> docs/index.md
+# ./task.sh -l
+
+### netlify.toml - custom build command
 
 function help() {
     cat << EOS
