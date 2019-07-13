@@ -4,7 +4,7 @@ site_description: A curated list of awesome ArchLinux frameworks, libraries and 
 site_author: Alex Creio
 repo_name: creio/awesome-arch
 repo_url: https://github.com/creio/awesome-arch
-# edit_uri: ""
+# edit_uri: edit/master
 copyright: 'Copyright &copy;'
 
 theme:
@@ -31,3 +31,6 @@ extra_css:
     - assets/css/extra.css
 nav:
   - "Home": "index.md"
+  - "Start": "start"
+  # - "Getting started":
+  #     - "Start": "start"
