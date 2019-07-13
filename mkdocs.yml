@@ -4,12 +4,21 @@ site_description: A curated list of awesome ArchLinux frameworks, libraries and 
 site_author: Alex Creio
 repo_name: creio/awesome-arch
 repo_url: https://github.com/creio/awesome-arch
+copyright: 'Copyright &copy;'
+
 theme:
   name: material
   palette:
-    primary: red
-    accent: pink
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  # favicon: 'assets/images/favicon.ico'
+
 extra:
+  search:
+    language: 'en, ru'
   social:
     - type: github
       link: https://github.com/creio
@@ -19,4 +28,4 @@ extra:
 extra_css:
     - css/extra.css
 nav:
-  - "Awesome ArchLinux": "index.md"
+  - "Home": "index.md"
