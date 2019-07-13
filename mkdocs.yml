@@ -7,6 +7,7 @@ repo_url: https://github.com/creio/awesome-arch
 copyright: 'Copyright &copy;'
 
 theme:
+  language: 'ru'
   name: material
   palette:
     primary: 'indigo'
